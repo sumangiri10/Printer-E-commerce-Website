@@ -1,1 +1,1 @@
-# Printer-E-commerce-Website
+This project is a group coursework submission for the CC4057NI Introduction to Information System course (2023/24 Autumn), developed by Sadkshya Dahal, Swesha Maharjan, Suman Giri, and Manjil Limbu. The website, "Print Avenue," is an e-commerce platform designed to provide a user-friendly and visually appealing experience for users seeking printer-related information and products, built using HTML, CSS, and JavaScript.
