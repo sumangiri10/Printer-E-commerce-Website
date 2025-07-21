@@ -1,0 +1,209 @@
+<!--  This is the HTML code for the about us page of the website "Print Avenue". 
+The webpage consists of a header, feedback form, team details and a footer. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for responsive design and character set -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <!-- Page title -->
+    <title>About US - Print Avenue</title>
+  </head>
+  <!-- Internal CSS  -->
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #191919, #232d3f);
+      color: #eeeee4;
+      font-family: "Arial", sans-serif;
+    }
+    .about-us-section {
+      text-align: center;
+      margin: 40px 0;
+      padding: 20px;
+    }
+    .about-us-section h1 {
+      color: #3498db;
+    }
+    .about-us-section h1:hover {
+      color: burlywood;
+    }
+    .about-us-section p:hover {
+      color: aquamarine;
+    }
+    .about-us-section p {
+      font-size: 20px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #eeeee4;
+    }
+  </style>
+  <body>
+    <header>
+      <!-- Logo of the website -->
+      <div class="logo">
+        <a href="../HTML/home.html">
+          <img src="../Images/logo.png" alt="Logo" />
+        </a>
+      </div>
+      <!-- Navigation bar -->
+      <nav>
+        <ul>
+          <li><a href="../HTML/home.html">Home</a></li>
+          <li><a href="../HTML/product.html">Product</a></li>
+          <li><a href="../HTML/blog.html">Blog</a></li>
+          <li><a href="../HTML/research.html">Research</a></li>
+          <li><a href="../HTML/about.html" class="active">About Us</a></li>
+        </ul>
+      </nav>
+      <!-- Search bar, sign in and cart -->
+      <div class="search-sign-cart">
+        <input type="text" class="search-input" placeholder="Search Items" />
+        <a href="../HTML/signin.html">
+          <img src="../Images/user.png" alt="Sign In" />
+        </a>
+        <a href="#">
+          <img src="../Images/cart.png" alt="Shopping Cart" />
+        </a>
+      </div>
+    </header>
+    <!-- About Us section -->
+    <div class="about-us-section">
+      <h1>Where Innovation Meets Quality!</h1>
+      <p>
+        Welcome to Print Avenue! We are a team of dedicated individuals
+        passionate about technology and innovation. Our mission is to provide
+        high-quality printing solutions to our customers while embracing
+        creativity and collaboration.
+      </p>
+    </div>
+    <!-- Feedback form container -->
+    <div class="form-container">
+      <!-- Inline CSS for heading -->
+      <h1 style="color: #eeeee4; text-align: center">Feedback Form</h1>
+      <form id="contactForm">
+        <!-- Form fields for name, email and message -->
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Joe Goldie"
+          required
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="abc@gmail.com"
+          required
+        />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <!-- Team section -->
+    <div class="team-section">
+      <h1>Meet Our Team</h1>
+      <!-- Container for team members -->
+      <div class="team-container">
+        <!-- Form for Member 1 -->
+        <div class="team-member member1">
+          <div class="member-img">
+            <img src="../Images/suman.jpg" alt="Team Member 1" />
+          </div>
+          <!-- Details about Member 1 -->
+          <h3>Suman Giri</h3>
+          <p class="details">Technical Skills: Web Development, Java</p>
+          <p class="details">
+            Soft Skills: Creativity, Teamwork, Problem Solving
+          </p>
+          <p class="details">Education: Bachelor's in Computer Science</p>
+          <p class="details">
+            Volunteering: IT Support, Web Development Workshop
+          </p>
+        </div>
+        <!-- For Member 2 -->
+        <div class="team-member member2">
+          <div class="member-img">
+            <img src="../Images/sadikshya.jpg" alt="Team Member 2" />
+          </div>
+          <!-- Details about Member 2 -->
+          <h3>Sadikshya Dahal</h3>
+          <p class="details">Technical Skills: Event Tech, Virtual Meetings</p>
+          <p class="details">Soft Skills: Critical Thinking, Communication</p>
+          <p class="details">Education: Bachelor's in Computing</p>
+          <p class="details">
+            Volunteering: Coding Bootcamp Instructor and Organizer
+          </p>
+        </div>
+        <!-- For Member 3 -->
+        <div class="team-member member3">
+          <div class="member-img">
+            <img src="../Images/manjil.jpg" alt="Team Member 3" />
+          </div>
+          <!-- Details about Member 3 -->
+          <h3>Manjil Limbu</h3>
+          <p class="details">Technical Skills: Git, Testing</p>
+          <p class="details">Soft Skills: Leadership, Adaptability</p>
+          <p class="details">Education: Bachelor's in Computer Science</p>
+          <p class="details">Volunteering: Open Source Contributions, Mentor</p>
+        </div>
+        <!-- For Member 4 -->
+        <div class="team-member member4">
+          <div class="member-img">
+            <img src="../Images/swesha.JPG" alt="Team Member 4" />
+          </div>
+          <!-- Details about Member 4 -->
+          <h3>Swesha Maharjan</h3>
+          <p class="details">
+            Technical Skills: Project Management, Coordination
+          </p>
+          <p class="details">Soft Skills: Event Planning, Time Management</p>
+          <p class="details">Education: Bachelor's in Computing</p>
+          <p class="details">
+            Volunteering: Tech Conference Organizer, Code Mentor
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Website footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="../HTML/home.html">
+            <img
+              src="../Images/logo.png"
+              class="footer-logo"
+              alt="Footer Logo"
+            />
+          </a>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2024 Print Avenue. All Rights Reserved.</p>
+        </div>
+        <!-- Social media links -->
+        <div class="footer-follow">
+          <p>Follow Us:</p>
+          <a href="https://facebook.com"
+            ><img src="../Images/facebook-icon.png" alt="Facebook"
+          /></a>
+          <a href="https://instagram.com"
+            ><img src="../Images/instagram-icon.png" alt="Instagram"
+          /></a>
+          <a href="https://twitter.com"
+            ><img src="../Images/twitter-icon.png" alt="Twitter"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript to handle form submission -->
+    <script src="../JavaScript/printer.js"></script>
+  </body>
+</html>

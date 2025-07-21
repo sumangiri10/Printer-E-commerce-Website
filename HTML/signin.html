@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In - Print Avenue</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fad0c9ff;
+      }
+      .form {
+        background-color: #fad0c9ff;
+        padding: 23px;
+        border-radius: 6%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      p {
+        margin-bottom: 20px;
+      }
+      input[type="text"],
+      textarea {
+        width: 20%;
+        padding: 8px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+      }
+      input[type="radio"] {
+        margin-right: 5px;
+      }
+      input[type="submit"]:hover {
+        background-color: #fad0c9ff;
+      }
+    </style>
+  </head>
+  <body align="center">
+    <form name="messageform" onsubmit="return validateform()" class="form">
+      <p>
+        First name: <br />
+        <input type="text" name="firstname" />
+      </p>
+      <p>
+        Last name: <br />
+        <input type="text" name="lastname" />
+      </p>
+      <p>
+        Gender <input type="radio" name="gender" value="male" />male
+        <input type="radio" name="gender" value="female" />female
+      </p>
+      <p>
+        Email: <br />
+        <input type="text" name="email" />
+      </p>
+
+      <p><input type="submit" value="Submit" /></p>
+    </form>
+
+    <div style="text-align: center; margin-top: 20px">
+      <button onclick="goBack()">Go Back</button>
+    </div>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+      function validateform() {
+        var fname = document.forms["messageform"]["firstname"].value;
+        var lname = document.forms["messageform"]["lastname"].value;
+        var gender = document.forms["messageform"]["gender"].value;
+        var email = document.forms["messageform"]["email"].value;
+
+        if (fname == "" || lname == "" || gender == "" || email == "") {
+          alert("Kindly fill up the form");
+          return false;
+        } else {
+          alert("Form submitted successfully");
+          return true;
+        }
+      }
+    </script>
+  </body>
+</html>

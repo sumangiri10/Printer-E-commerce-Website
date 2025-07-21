@@ -1,0 +1,105 @@
+<!--  This is the HTML code for the home page of the website "Print Avenue". 
+The webpage consists of a header, main content area, and a footer. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Home - Print Avenue</title>
+    <!-- Internal CSS -->
+    <style>
+      body {
+        margin: 0;
+        background-color: #fad0c9ff;
+      }
+      .paragraph {
+        flex: 1;
+        padding: 10px;
+        color: #990011ff;
+        text-align: center;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The header contains the logo, navigation menu, and a search bar along with sign-in and cart icons. -->
+    <header>
+      <div class="logo">
+        <a href="../HTML/home.html"
+          ><img src="../Images/logo.png" alt="Logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../HTML/home.html">Home</a></li>
+          <li><a href="../HTML/product.html">Product</a></li>
+          <li><a href="../HTML/blog.html">Blog</a></li>
+          <li><a href="../HTML/research.html">Research</a></li>
+          <li><a href="../HTML/about.html">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="search-sign-cart">
+        <input type="text" class="search-input" placeholder="Search Items" />
+        <a href="../HTML/signin.html">
+          <img src="../Images/user.png" alt="Sign In" />
+        </a>
+        <a href="#">
+          <img src="../Images/cart.png" alt="Shopping Cart" />
+        </a>
+      </div>
+    </header>
+    <!-- The main content -->
+    <main>
+      <p align="center">
+        <img src="../Images/Rules!.png" alt="Rules" width="300" height="300" />
+      </p>
+      <div class="paragraph">
+        <h1>Welcome to Print Avenue!</h1>
+        <p>
+          Explore our selection of top-quality printers from leading brands on
+          our website. These printers are easy to use and compatible with
+          various devices with fast and reliable performance, ensuring
+          high-quality prints. Upgrade your printing quality with our collection
+          of affordable printers, open for purchase on our website.
+        </p>
+        <br />
+        <div>
+          <button type="button">
+            <a style="color: #990011ff" href="../HTML/popular.html"
+              >Most Popular Printers</a
+            >
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- The footer includes the logo, copyright information, and social media links. -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="../HTML/home.html"
+            ><img
+              src="../Images/logo.png"
+              class="footer-logo"
+              alt="Footer Logo"
+          /></a>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2024 Print Avenue. All Rights Reserved.</p>
+        </div>
+        <div class="footer-follow">
+          <p>Follow Us:</p>
+          <a href="https://facebook.com"
+            ><img src="../Images/facebook-icon.png" alt="Facebook"
+          /></a>
+          <a href="https://instagram.com"
+            ><img src="../Images/instagram-icon.png" alt="Instagram"
+          /></a>
+          <a href="https://twitter.com"
+            ><img src="../Images/twitter-icon.png" alt="Twitter"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

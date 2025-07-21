@@ -1,0 +1,251 @@
+/* External CSS */
+
+/* Styling the header to have a flex layout */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #272e33;
+  color: whitesmoke;
+  height: 50px;
+  position: sticky;
+  top: 0%;
+  z-index: 2;
+}
+
+/* Aligning the logo with its link in a flex container */
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Setting the width of the logo image */
+.logo img {
+  width: 300px;
+}
+
+/* Aligning list items in a flex container */
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Adding right margin to each navigation list item */
+nav li {
+  margin-right: 30px;
+}
+
+/* Styling the navigation links */
+nav a {
+  text-decoration: none;
+  color: #eeeee4;
+  font-weight: bold;
+  font-size: 19px;
+  font-family: "sans-serif";
+  transition: color 0.3s ease;
+  cursor: pointer;
+  padding: 5px;
+}
+/* Changing the color of navigation links on hover */
+nav a:hover {
+  background-color: #191919;
+  border-radius: 5px;
+  color: #abdbe3;
+}
+nav a.active {
+  background-color: #191919;
+  border-radius: 5px;
+  color: #abdbe3;
+}
+
+/* Aligning search, sign-in, and cart options in a flex container */
+.search-sign-cart {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling the search input field */
+.search-input {
+  padding: 8px 15px;
+  color: #fff;
+  background-color: #243434;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  margin-right: 20px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Adding right margin to each link in the search-sign-cart section */
+.search-sign-cart a {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+/* Setting maximum width for images in the search-sign-cart section */
+.search-sign-cart img {
+  max-width: 40px;
+}
+/* Styling the form container */
+.form-container {
+  max-width: 550px;
+  margin: 50px auto;
+  padding: 25px;
+  background-color: #272e33;
+  border-radius: 15px;
+}
+
+/* Setting flexbox layout for the form and aligning form elements in a column */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling label elements with a margin and light color */
+label {
+  margin-bottom: 5px;
+  color: #e2e2e2;
+}
+
+/* Styling input and textarea elements with padding, margin, border-radius */
+input,
+textarea {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #042b3c;
+  color: #e2e2e2;
+}
+
+/* Styling the button with padding, rounded corners, hover effects */
+button {
+  padding: 10px;
+  background-color: #eab676;
+  color: #272e33;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Changing button background color on hover */
+button:hover {
+  background-color: #e2e2e2;
+}
+
+/* Setting top margin and center text alignment for the team section */
+.team-section {
+  margin-top: 5%;
+  text-align: center;
+}
+
+/* Styling the heading in the team section */
+.team-section h1 {
+  font-family: "Allura", cursive;
+  font-size: 45px;
+  margin-bottom: 70px;
+  color: #d4d5d6;
+}
+
+/* Aligning team members in a flex container and allowing for wrapping */
+.team-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Styling individual team members */
+.team-member {
+  background: #3d4347;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;
+  position: relative;
+}
+
+/* Styling the h3 elements within the team member container */
+.team-member h3 {
+  color: #eab676;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+/* Styling the member image container */
+.team-member .member-img {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+/* Styling the member image */
+.team-member .member-img img {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
+/* Styling the details paragraph */
+.details {
+  color: #d4d5d6;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* Styling the footer to have a fixed position at the bottom of the page, with a flex layout for its content */
+footer {
+  background-color: #272e33;
+  color: #e2e2e2;
+  padding: 10px;
+  max-width: 100%;
+}
+
+/* Aligning footer content items in a flex container with items evenly spaced and aligned center */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+/* Setting the width of the footer logo image */
+.footer-logo img {
+  width: 200px;
+}
+
+/* Removing default margin from the footer copyright paragraph */
+.footer-copyright p {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Adding a small top and bottom margin to the footer follow paragraph */
+.footer-follow p {
+  margin: 10px;
+}
+
+/* Adding right margin to each social media link in the footer */
+.footer-follow a {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+/* Setting maximum width for social media icons */
+.footer-follow img {
+  max-width: 20px;
+  height: auto;
+}
